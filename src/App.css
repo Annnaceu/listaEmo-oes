@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+/* Corpo */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f5;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1 {
+  font-size: 1.8em;
+  color: #333;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.memojis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.emoji-icon {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.emoji-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Menu Hambúrguer */
+.menu-toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30px;
+  width: 30px;
+}
+
+.bar {
+  width: 30px;
+  height: 5px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #007aff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  padding-top: 60px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  color: #fff;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: #005bb5;
+}
+
+/* Layout Principal */
+.main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 40px;
+}
+
+/* Ajuste nos blocos de texto */
+.text-blocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.left-text-block, .right-text-block {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  width: 45%;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.left-text-block h2, .right-text-block h2 {
+  font-size: 1.6em;
+  color: #007aff;
+  margin-bottom: 15px;
+}
+
+.left-text-block p, .right-text-block p {
+  font-size: 1.1em;
+}
+
+
+/* Botões de Controle da Webcam */
+.webcam-controls {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stop-button, .confirm-button {
+  background-color: #007aff;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.stop-button:hover, .confirm-button:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilização dos botões */
+.emotion-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
 }
+
+button {
+  background-color: #007aff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+  transform: translateY(-5px);
+}
+
+button:disabled {
+  background-color: #c1c1c6;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #c1c1c6;
+  transform: translateY(0);
+}
+
+/* Estilização do texto de emoção detectada */
+.emotion-text {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+

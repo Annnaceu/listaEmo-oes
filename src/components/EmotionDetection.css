@@ -1,0 +1,66 @@
+/* Detecção de Emoção */
+.emotion-detection-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Ajustando a webcam para manter o aspecto */
+  video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+
+  
+  .emotion-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  button {
+    background-color: #007aff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+    transform: translateY(-5px);
+  }
+  
+  button:disabled {
+    background-color: #c1c1c6;
+    cursor: not-allowed;
+  }
+  
+  button:disabled:hover {
+    background-color: #c1c1c6;
+    transform: translateY(0);
+  }
+  
+  /* Estilização do texto de emoção detectada */
+  .emotion-text {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  

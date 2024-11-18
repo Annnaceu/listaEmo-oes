@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+Projeto: Plataforma de Detecção de Emoções e Gerenciamento de Tarefas
+Descrição do Projeto:
+Esta plataforma combina visão computacional para a detecção de emoções faciais em tempo real com um sistema de gerenciamento de tarefas interativo. O usuário pode visualizar suas emoções em tempo real através da webcam e gerenciar suas tarefas de forma simples e eficiente, com funcionalidades como marcar tarefas como concluídas ou excluí-las.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Funcionalidades Principais:
+Detecção de Emoções Faciais:
 
-## Available Scripts
+A plataforma utiliza a tecnologia de visão computacional com a biblioteca Face-api.js para identificar e analisar expressões faciais do usuário em tempo real.
+O sistema consegue detectar emoções como felicidade, tristeza, raiva, surpresa, entre outras.
+Após a detecção, a emoção predominante é exibida na tela, e o usuário pode confirmar a emoção detectada.
+Gerenciamento de Tarefas:
 
-In the project directory, you can run:
+Além da detecção de emoções, a plataforma oferece um sistema de lista de tarefas interativo.
+O usuário pode adicionar tarefas, marcar como concluídas ou excluir tarefas.
+A interface é dinâmica e permite a interação suave, com animações e transições para melhorar a experiência do usuário.
+Integração das Funcionalidades:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+O sistema combina a detecção de emoções faciais com o gerenciamento de tarefas, criando uma experiência de usuário única e personalizada. A cada vez que o usuário interage com a lista de tarefas, a plataforma exibe a emoção detectada, criando um ambiente mais interativo e focado no bem-estar.
+Tecnologias Utilizadas:
+React.js para o desenvolvimento da interface de usuário.
+Face-api.js para a detecção e reconhecimento das expressões faciais.
+CSS para a estilização da plataforma, incluindo animações suaves e design responsivo.
+Git/GitHub para o controle de versão e gerenciamento do código-fonte.
+Destaque para Visão Computacional:
+A principal inovação deste projeto está na integração da visão computacional para detectar e reconhecer emoções faciais. Ao utilizar a webcam do usuário, a plataforma consegue analisar suas expressões faciais em tempo real, proporcionando uma experiência única e interativa. Essa tecnologia não apenas identifica as emoções do usuário, mas também melhora a interação com a plataforma, ajudando a criar um ambiente mais empático e focado no usuário.
